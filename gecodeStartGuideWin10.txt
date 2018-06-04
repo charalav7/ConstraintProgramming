@@ -1,0 +1,19 @@
+------HOW TO MAKE EVERYTHING WORK ON WINDOWS 10 x64-------
+
+1. Download Build Tools for Visual Studio 2017 (add C++ support) --> https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017
+2. Download and install Gecode x64--> http://www.gecode.org/download.html
+
+- Let us assume you want to compile the file "all-interval.cpp" which is found in folder with path "C:\Users\chara"
+1. Place the provided "compileG.bat" file in the same folder with "all-interval.cpp"
+2. Open --> x64 Native Tools Command Prompt for VS 2017 (found here: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools\VC)
+3. In the Native Tools window, we want to navigate to our project folder. Just type the following and then press Enter:
+	cd "C:\Users\chara"
+4. Now type the following and then press Enter:
+	compileG.bat all-interval
+5. If everything worked correctly, you will have results!
+6. In case of some options (arguments) for the compiling file (e.g. size = 1), in step 4, type the following and then press Enter:
+	compileG.bat all-interval 1
+	
+
+Tip: In case Gecode root directory is not found at the path "C:\Program Files\Gecode", then open the "compileG.bat" file with 
+	a text editor (e.g. Notepad ++) and change with the correct path the appropriate fields.

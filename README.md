@@ -1,2 +1,2 @@
 # ConstraintProgramming
-Constraint Programming code for ID2204
+Constraint Programming code using Gecode x64, for ID2204
